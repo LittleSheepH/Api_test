@@ -1,0 +1,111 @@
+
+2018-12-16 01:18:23,099-INFO-do_logging.py-DaBaiCai-日志信息：info
+2018-12-16 01:18:23,099-INFO-do_logging.py-DaBaiCai-日志信息：info
+2018-12-16 01:18:23,100-ERROR-do_logging.py-DaBaiCai-日志信息：error
+2018-12-16 01:18:23,100-ERROR-do_logging.py-DaBaiCai-日志信息：error
+2018-12-16 01:19:29,580-INFO-do_logging.py-DaBaiCai-日志信息：info
+2018-12-16 01:19:29,580-INFO-do_logging.py-DaBaiCai-日志信息：info
+2018-12-16 01:19:29,581-ERROR-do_logging.py-DaBaiCai-日志信息：error
+2018-12-16 01:19:29,581-ERROR-do_logging.py-DaBaiCai-日志信息：error
+2018-12-16 01:19:45,621-INFO-do_logging.py-DaBaiCai-日志信息：info
+2018-12-16 01:19:45,621-ERROR-do_logging.py-DaBaiCai-日志信息：error
+2018-12-16 01:20:15,057-INFO-Api_testcase.py-DaBaiCai-日志信息：目前正在执行第1条用例
+2018-12-16 01:20:15,065-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的URL------------------------------
+2018-12-16 01:20:15,066-DEBUG-Api_testcase.py-DaBaiCai-日志信息：url:http://47.107.168.87:8080/futureloan/mvc/api/member/login
+2018-12-16 01:20:15,066-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的data------------------------------
+2018-12-16 01:20:15,067-DEBUG-Api_testcase.py-DaBaiCai-日志信息：data:{'mobilephone': 18688773467, 'pwd': '123456'}
+2018-12-16 01:20:15,067-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始http请求------------------------------
+2018-12-16 01:20:15,332-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------结束http请求-----------------------------
+2018-12-16 01:20:15,333-DEBUG-Api_testcase.py-DaBaiCai-日志信息：登陆请求结果：{'status': 1, 'msg': '登录成功', 'code': '10001', 'data': None}
+2018-12-16 01:20:15,341-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始断言-----------------------------
+2018-12-16 01:20:15,342-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------测试结果：Pass------------------------
+2018-12-16 01:20:15,343-INFO-Api_testcase.py-DaBaiCai-日志信息：目前正在执行第3条用例
+2018-12-16 01:20:15,344-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的URL------------------------------
+2018-12-16 01:20:15,344-DEBUG-Api_testcase.py-DaBaiCai-日志信息：url:http://47.107.168.87:8080/futureloan/mvc/api/member/login
+2018-12-16 01:20:15,344-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的data------------------------------
+2018-12-16 01:20:15,345-DEBUG-Api_testcase.py-DaBaiCai-日志信息：data:{'mobilephone': 18688773467, 'pwd': '12345678'}
+2018-12-16 01:20:15,345-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始http请求------------------------------
+2018-12-16 01:20:15,577-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------结束http请求-----------------------------
+2018-12-16 01:20:15,578-DEBUG-Api_testcase.py-DaBaiCai-日志信息：登陆请求结果：{'status': 0, 'msg': '用户名或密码错误', 'code': '20111', 'data': None}
+2018-12-16 01:20:15,580-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始断言-----------------------------
+2018-12-16 01:20:15,581-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------测试结果：Pass------------------------
+2018-12-16 01:21:02,857-INFO-Api_testcase.py-DaBaiCai-日志信息：目前正在执行第1条用例
+2018-12-16 01:21:02,857-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的URL------------------------------
+2018-12-16 01:21:02,857-DEBUG-Api_testcase.py-DaBaiCai-日志信息：url:http://47.107.168.87:8080/futureloan/mvc/api/member/login
+2018-12-16 01:21:02,857-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的data------------------------------
+2018-12-16 01:21:02,858-DEBUG-Api_testcase.py-DaBaiCai-日志信息：data:{'pwd': '123456', 'mobilephone': 18688773467}
+2018-12-16 01:21:02,858-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始http请求------------------------------
+2018-12-16 01:21:03,205-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------结束http请求-----------------------------
+2018-12-16 01:21:03,206-DEBUG-Api_testcase.py-DaBaiCai-日志信息：登陆请求结果：{'status': 1, 'msg': '登录成功', 'code': '10001', 'data': None}
+2018-12-16 01:21:03,206-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始断言-----------------------------
+2018-12-16 01:21:03,208-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------测试结果：Pass------------------------
+2018-12-16 01:21:03,208-INFO-Api_testcase.py-DaBaiCai-日志信息：目前正在执行第3条用例
+2018-12-16 01:21:03,208-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的URL------------------------------
+2018-12-16 01:21:03,209-DEBUG-Api_testcase.py-DaBaiCai-日志信息：url:http://47.107.168.87:8080/futureloan/mvc/api/member/login
+2018-12-16 01:21:03,209-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的data------------------------------
+2018-12-16 01:21:03,210-DEBUG-Api_testcase.py-DaBaiCai-日志信息：data:{'pwd': '12345678', 'mobilephone': 18688773467}
+2018-12-16 01:21:03,210-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始http请求------------------------------
+2018-12-16 01:21:03,454-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------结束http请求-----------------------------
+2018-12-16 01:21:03,455-DEBUG-Api_testcase.py-DaBaiCai-日志信息：登陆请求结果：{'status': 0, 'msg': '用户名或密码错误', 'code': '20111', 'data': None}
+2018-12-16 01:21:03,455-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始断言-----------------------------
+2018-12-16 01:21:03,456-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------测试结果：Pass------------------------
+2018-12-16 11:29:00,732-INFO-Api_testcase.py-DaBaiCai-日志信息：目前正在执行第1条用例
+2018-12-16 11:29:00,734-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的URL------------------------------
+2018-12-16 11:29:00,734-DEBUG-Api_testcase.py-DaBaiCai-日志信息：url:http://47.107.168.87:8080/futureloan/mvc/api/member/login
+2018-12-16 11:29:00,734-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的data------------------------------
+2018-12-16 11:29:00,734-DEBUG-Api_testcase.py-DaBaiCai-日志信息：data:{'pwd': '123456', 'mobilephone': 18688773467}
+2018-12-16 11:29:00,734-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始http请求------------------------------
+2018-12-16 11:29:00,834-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------结束http请求-----------------------------
+2018-12-16 11:29:00,835-DEBUG-Api_testcase.py-DaBaiCai-日志信息：登陆请求结果：{'data': None, 'msg': '登录成功', 'code': '10001', 'status': 1}
+2018-12-16 11:29:00,835-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始断言-----------------------------
+2018-12-16 11:29:00,835-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------测试结果：Pass------------------------
+2018-12-16 11:29:00,836-INFO-Api_testcase.py-DaBaiCai-日志信息：目前正在执行第3条用例
+2018-12-16 11:29:00,836-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的URL------------------------------
+2018-12-16 11:29:00,836-DEBUG-Api_testcase.py-DaBaiCai-日志信息：url:http://47.107.168.87:8080/futureloan/mvc/api/member/login
+2018-12-16 11:29:00,836-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的data------------------------------
+2018-12-16 11:29:00,837-DEBUG-Api_testcase.py-DaBaiCai-日志信息：data:{'pwd': '12345678', 'mobilephone': 18688773467}
+2018-12-16 11:29:00,837-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始http请求------------------------------
+2018-12-16 11:29:01,010-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------结束http请求-----------------------------
+2018-12-16 11:29:01,011-DEBUG-Api_testcase.py-DaBaiCai-日志信息：登陆请求结果：{'data': None, 'msg': '用户名或密码错误', 'code': '20111', 'status': 0}
+2018-12-16 11:29:01,012-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始断言-----------------------------
+2018-12-16 11:29:01,013-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------测试结果：Pass------------------------
+2018-12-16 14:00:19,826-INFO-Api_testcase.py-DaBaiCai-日志信息：目前正在执行第1条用例
+2018-12-16 14:00:19,826-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的URL------------------------------
+2018-12-16 14:00:19,827-DEBUG-Api_testcase.py-DaBaiCai-日志信息：url:http://47.107.168.87:8080/futureloan/mvc/api/member/login
+2018-12-16 14:00:19,827-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的data------------------------------
+2018-12-16 14:00:19,827-DEBUG-Api_testcase.py-DaBaiCai-日志信息：data:{'mobilephone': 18688773467, 'pwd': '123456'}
+2018-12-16 14:00:19,828-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始http请求------------------------------
+2018-12-16 14:00:19,857-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------结束http请求-----------------------------
+2018-12-16 14:00:19,858-DEBUG-Api_testcase.py-DaBaiCai-日志信息：登陆请求结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-16 14:00:19,858-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始断言-----------------------------
+2018-12-16 14:00:19,858-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------测试结果：Pass------------------------
+2018-12-16 14:00:19,859-INFO-Api_testcase.py-DaBaiCai-日志信息：目前正在执行第3条用例
+2018-12-16 14:00:19,859-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的URL------------------------------
+2018-12-16 14:00:19,859-DEBUG-Api_testcase.py-DaBaiCai-日志信息：url:http://47.107.168.87:8080/futureloan/mvc/api/member/login
+2018-12-16 14:00:19,859-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的data------------------------------
+2018-12-16 14:00:19,859-DEBUG-Api_testcase.py-DaBaiCai-日志信息：data:{'mobilephone': 18688773467, 'pwd': '12345678'}
+2018-12-16 14:00:19,859-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始http请求------------------------------
+2018-12-16 14:00:19,884-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------结束http请求-----------------------------
+2018-12-16 14:00:19,885-DEBUG-Api_testcase.py-DaBaiCai-日志信息：登陆请求结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2018-12-16 14:00:19,885-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始断言-----------------------------
+2018-12-16 14:00:19,885-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------测试结果：Pass------------------------
+2018-12-16 14:02:02,452-INFO-Api_testcase.py-DaBaiCai-日志信息：目前正在执行第1条用例
+2018-12-16 14:02:02,453-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的URL------------------------------
+2018-12-16 14:02:02,453-DEBUG-Api_testcase.py-DaBaiCai-日志信息：url:http://47.107.168.87:8080/futureloan/mvc/api/member/login
+2018-12-16 14:02:02,453-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的data------------------------------
+2018-12-16 14:02:02,453-DEBUG-Api_testcase.py-DaBaiCai-日志信息：data:{'mobilephone': 18688773467, 'pwd': '123456'}
+2018-12-16 14:02:02,453-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始http请求------------------------------
+2018-12-16 14:02:02,481-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------结束http请求-----------------------------
+2018-12-16 14:02:02,481-DEBUG-Api_testcase.py-DaBaiCai-日志信息：登陆请求结果：{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-16 14:02:02,481-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始断言-----------------------------
+2018-12-16 14:02:02,481-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------测试结果：Pass------------------------
+2018-12-16 14:02:02,482-INFO-Api_testcase.py-DaBaiCai-日志信息：目前正在执行第3条用例
+2018-12-16 14:02:02,482-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的URL------------------------------
+2018-12-16 14:02:02,482-DEBUG-Api_testcase.py-DaBaiCai-日志信息：url:http://47.107.168.87:8080/futureloan/mvc/api/member/login
+2018-12-16 14:02:02,482-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始检查我们的data------------------------------
+2018-12-16 14:02:02,482-DEBUG-Api_testcase.py-DaBaiCai-日志信息：data:{'mobilephone': 18688773467, 'pwd': '12345678'}
+2018-12-16 14:02:02,482-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始http请求------------------------------
+2018-12-16 14:02:02,502-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------结束http请求-----------------------------
+2018-12-16 14:02:02,502-DEBUG-Api_testcase.py-DaBaiCai-日志信息：登陆请求结果：{'status': 0, 'code': '20111', 'data': None, 'msg': '用户名或密码错误'}
+2018-12-16 14:02:02,503-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------开始断言-----------------------------
+2018-12-16 14:02:02,503-INFO-Api_testcase.py-DaBaiCai-日志信息：-------------测试结果：Pass------------------------

@@ -12,7 +12,7 @@ from ddt import ddt,data
 import unittest
 import json
 read=readcase(concants.data)
-test_data = read.get_case('login')
+test_data = read.get_case('2login')
 @ddt
 class TestLogin(unittest.TestCase):
 
@@ -30,6 +30,6 @@ class TestLogin(unittest.TestCase):
             result='FAIL'
             raise e
         finally:
-            read.write_actural_by_case_id('login', item.case_id, actural=res.get_text(), result=result)
+            read.write_actural_by_case_id('2login', item.case_id, actural=res.get_text(), result=result)
 
 
