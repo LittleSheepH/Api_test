@@ -36,7 +36,10 @@ if __name__ == '__main__':
     print(sql1)
     mysql = MysqlUtil()
     print('-----------')
+    result1= mysql.fetch_one(sql)
+    print(result1)
     result =mysql.fetch_all(sql1)#result是一个元祖,根据索引取
     # max_mobile = int(result[0])+1
-    print(result['LeaveAmount'])
+    print(type(*result),result)
+    print(len(result))
     # print(max_mobile)

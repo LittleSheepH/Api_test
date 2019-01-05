@@ -6,8 +6,12 @@
 # @Software   :PyCharm
 import openpyxl
 import json
-from api_auto_class.common.request import Request
+
+import xlrd as xlrd
+
+# from api_auto_class.common.request import Request
 from api_auto_class.common.config import Configloader
+from api_auto_class.common import concants
 
 class Case:
     def __init__(self):
@@ -45,7 +49,7 @@ class readcase(object):
     def write_actural_by_case_id(self,sheet_name,case_id,actural=None,result=None,amount=None,database=None):
         sheet=self.workbook[sheet_name]
         maxrow= sheet.max_row
-        for r in range(2,maxrow+1):
+        for r in range(2,maxrow+1):#闭区间所以加1
             case_id_r = sheet.cell(row=r,column = 1).value#取第R行的第1列的caseid
             if case_id_r == case_id:
                 sheet.cell(r,7).value = actural#写入值
@@ -55,43 +59,21 @@ class readcase(object):
                 self.workbook.save(self.file_name)
                 break
 
+    def excel(self, filename):
+        if self.file_exist(filename):
+            book = xlrd.open_workbook(filename)
+            sheet = book.sheet_by_index(0)
+            rows = sheet.nrows
+            list = []
+            for row in range(rows):
+                list.append(sheet.row_values(row))
+            return list
 
-    # def write_result_by_case_id(self,sheetname,case_id,result):
-    #     sheet=self.workbook[sheetname]
-    #     maxrow= sheet.max_row
-    #     # print("***maxrow**{}".format(maxrow))
-    #     # print("***case_id**{}".format(case_id))
-    #     for r in range(2,maxrow+1):
-    #         case_id_r = sheet.cell(row=r,column = 1).value#取第R行的第1列的caseid
-    #         # print(sheet.cell(row=r,column = 1).value)
-    #         # print("***case_id_r**{}".format(case_id_r))
-    #         if case_id_r == case_id:
-    #             sheet.cell(r,8).value = result#写入值
-    #             self.workbook.save(self.file_name)
-    #             break
+
+
 
 if __name__ == '__main__':
-    do_excel= readcase('../datas/testdatas.xlsx')
-    sheetnames=do_excel.get_sheet_names()
-    print(sheetnames)
-    case_list=['register']
-    for sheetname in sheetnames:
-        if sheetname in case_list:
-            cases =do_excel.get_case(sheetname)#返回的是一个列表
-            print('测试用例个数',len(cases))
-            for case in cases:#遍历测试用例列表，每个列表元素是一个实例，实例的属性才是要的值，每进for一次，就取一个case实例
-                #print("case信息;",case.__dict__)#打印case信息,每个object都有这个属性，打印每个object的值，是一个字典
-                data = eval(case.data)
-                print(type(data))
-                resp = Request(method=case.method,url=case.url,data=data)
-                # print(resp.get_statue_code())
-                # tesp_test=json.dumps(resp.get_json(),ensure_ascii=False,indent=4)
-                # print(tesp_test)
-                # print(resp.get_json())
-                print(resp.get_statue_code())
-                #判断接口响应是否和excel里面的expected的值一致
-                print(resp.get_text())
-                print(type(case.excepted))
-
-
+    read = readcase(concants.data)
+    list=read.excel(concants.data)
+    print(list)
 

@@ -16,7 +16,7 @@ from api_auto_class.common.config import Configloader
 from api_auto_class.common.base_data import *
 #读取测试数据
 readexcel = readcase(concants.data)
-test_data = readexcel.get_case('recharge')
+test_data = readexcel.get_case('3recharge')
 #读取配置文件
 conf = Configloader()
 patten=conf.get('Patten','patten')
@@ -28,6 +28,9 @@ class TestRegister(unittest.TestCase):
         global connect
         connect = MysqlUtil()
         print('测试准备，连接数据库')
+    def setUp(self):
+        self.sql = "select LeaveAmount from future.member where MobilePhone={}".format(getattr(Context, 'normal_user'))
+        self.pre_amount = connect.fetch_one(self.sql)['LeaveAmount']  # 充值成功，检验有没有加到数据库
     @data(*test_data)
     def test_recharge(self,item):
         data=DoRegex.replace(item.data)#查找excel中数据并且替换
@@ -48,12 +51,15 @@ class TestRegister(unittest.TestCase):
             after_amount = connect.fetch_one(self.sql)['LeaveAmount']#充值成功，检验有没有加到数据库
             print(resp.get_json(),'******************************************************************')
             try:
-                self.assertEqual(str(after_amount),resp.get_json()['data']['leaveamount'])
+                self.assertEqual(float(after_amount),float(s['amount'])+float(self.pre_amount))
                 database="数据写入成功"+resp.get_json()['data']['leaveamount']
                 print("数据写入成功")
+                readexcel.write_actural_by_case_id('3recharge', item.case_id, actural=resp.get_text(), database=database)
             except AssertionError as e:
                 database = '数据写入失败'+resp.get_json()['data']['leaveamount']
                 print('数据写入失败')
+                readexcel.write_actural_by_case_id('3recharge', item.case_id, actural=resp.get_text(),
+                                                   database=database)
                 raise e
         try:
             self.assertEqual(str(item.excepted),str(resp.get_json()['code']))
@@ -64,7 +70,7 @@ class TestRegister(unittest.TestCase):
             result="FAIL"
             raise e
         finally:
-            readexcel.write_actural_by_case_id('recharge', item.case_id,actural= resp.get_text(),result= result)
+            readexcel.write_actural_by_case_id('3recharge', item.case_id,actural= resp.get_text(),result= result)
     @classmethod
     def tearDownClass(cls):
         connect.close()

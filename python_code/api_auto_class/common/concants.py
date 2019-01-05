@@ -20,6 +20,8 @@ data=os.path.join(datas_dir,'testdatas.xlsx')
 
 reports_dir= os.path.join(base_dir,'reports')
 # print(reports_dir)
+report_html = os.path.join(reports_dir,'reports.html')
 
 logs_dir = os.path.join(base_dir,'logs')
 # print(logs_dir)
+test_cases= os.path.join(base_dir,'testcases')

@@ -22,7 +22,7 @@ import re
 from api_auto_class.common.mysql_con import MysqlUtil
 from api_auto_class.common.config import Configloader
 readexcel = readcase(concants.data)
-test_data = readexcel.get_case('register')
+test_data = readexcel.get_case('1register')
 sql = "select mobilephone from future.member where mobilephone != ''order by mobilephone desc limit 1 "
 conf = Configloader()
 patten=conf.get('Patten','patten')
@@ -52,7 +52,7 @@ class TestRegister(unittest.TestCase):
             readexcel.write_actural_by_case_id('register', date.case_id, resp.get_text(), 'PASS')
         else:
             print("result:FAIL")
-            readexcel.write_actural_by_case_id('register', date.case_id, resp.get_text(), 'FAIL')
+            readexcel.write_actural_by_case_id('1register', date.case_id, resp.get_text(), 'FAIL')
 
     def tearDown(self):
         print("测试清除")
