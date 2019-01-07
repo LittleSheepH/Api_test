@@ -5,8 +5,8 @@
 # @File       :run_test_suite.py
 # @Software   :PyCharm
 import unittest
-from common import HTMLTestRunnerNew
-from common import concants
+from api_auto_class.common import HTMLTestRunnerNew
+from api_auto_class.common import concants
 suite = unittest.TestSuite()
 loader = unittest.TestLoader()
 
